@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap");
+
+:root {
+  --orange-color: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --VeryDark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+  background-color: var(--VeryDark-Blue);
+  font-family: "Overpass", sans-serif;
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font size (paragraph): 15px 
+font-family: 'Overpass', sans-serif;
+
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+.star-round {
+  background: #282f39;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+}
+
+.round {
+  background: #282f39;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  text-align: center;
+}
+.star-div {
+  opacity: 0.7;
+  margin-left: 5%;
+  height: 2rem;
+  width: 2rem;
+}
+.round:hover:not(.star-div) {
+  /* background-color: var(--orange-color); */
+  cursor: pointer;
+}
+.number {
+  height: 2rem;
+  width: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 15px;
+}
+.star-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.rating-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: auto;
+  background-color: #1f2630;
+  border-radius: 12px;
+  width: 35%;
+  padding: 28px 12px;
+  font-size: 18px;
+  gap: 20px;
+  color: var(--White);
+  visibility: visible;
+}
+
+.thanks-div {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: auto;
+  text-align: center;
+  background-color: #1f2630;
+  border-radius: 12px;
+  /* padding: 18px 30px; */
+  /* display: block; */
+  width: 40%;
+  padding: 28px 22px;
+  font-size: 18px;
+  gap: 20px;
+  color: var(--White);
+  visibility: hidden;
+}
+
+.btn {
+  background-color: var(--orange-color);
+  /* min-width: 85%; */
+  width: 90%;
+  padding: 12px 18px;
+  border-radius: 20px;
+  color: var(--White);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  font-size: 26px;
+  width: 90%;
+  margin: auto;
+}
+.para1 {
+  line-height: 2;
+  color: var(--White);
+  /* border: 1px solid red; */
+  margin: 0;
+  font-size: 15px;
+  width: 90%;
+  opacity: 0.5;
+  margin: auto;
+}
+.para2 {
+  color: var(--orange-color);
+  font-size: 15px;
+  background: #282f39;
+  padding: 8px;
+  border-radius: 12px;
+  min-width: 80%;
+  margin: auto;
+}
+
+.para3 {
+  line-height: 2;
+  width: 100%;
+  font-size: 15px;
+}
+.btn:hover {
+  background-color: var(--White);
+  color: var(--orange-color);
+  cursor: pointer;
+}
+.image-thanks-div {
+  width: 100px;
+  margin: auto;
+}
+
+.thanksImage {
+  width: 100%;
+  margin: auto;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1440px) {
+  .container {
+    width: 40%;
+  }
+  body {
+    background-color: var(--VeryDark-Blue);
+    font-size: 15px;
+    color: var(--White);
+    font-family: "Overpass", sans-serif;
+  }
+
+  .para1 {
+    font-size: 18px;
+  }
+  .para2 {
+    font-size: 12px;
+    min-width: 70%;
+  }
+  .thanks-title {
+    font-size: 22px;
+  }
+
+  /* .round {
+    height: 1.5rem;
+    width: 1.5rem;    
+  } */
+  .star-div {
+    height: 2rem;
+    width: 2rem;
+  }
+  .number {
+    font-size: 15px;
+  }
+  .thanks-div {
+    width: 40%;
+    padding: 28px 22px;
+    height: auto;
+    font-size: 18px;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 374px) and (max-width: 600px) {
+  .container {
+    width: 65%;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .thanks-div {
+    padding: 28px 22px;
+    height: auto;
+    gap: 20px;
+    width: 50%;
+  }
+  .para1 {
+    font-size: 18px;
+  }
+  .para2,
+  .para3 {
+    font-size: 12px;
+  }
+  .para2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    /* border: 2px solid orange; */
+    font-size: 11px;
+  }
+
+  .image-thanks-div {
+    width: 80px;
+  }
+
+  .star-div {
+    height: 2rem;
+    width: 2rem;
+  }
+  .btn {
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    width: 90%;
+  }
+
+  .thanks-div {
+    width: 70%;
+    font-size: 12px;
+  }
+  .para2,
+  .para3 {
+    font-size: 12px;
+    margin: 0;
+  }
+  .image-thanks-div {
+    width: 80px;
+  }
+  .btn {
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+}
+
+.bg-color{
+  background-color: var(--orange-color);
+}
